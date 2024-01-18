@@ -16,12 +16,12 @@ export default function Home() {
           👋
         </span>{' '}
       </h2>
-      <p className='text-pretty text-sm'>
+      <p className='text-pretty'>
         I am a fullstack web developer and an engineering undergrad at NSUT,
         Delhi. I like building web apps with Nextjs and Tailwind, and currently
         I am learning Rust and TypeScript.
       </p>
-      <p className='text-pretty text-sm'>
+      <p className='text-pretty'>
         I have yet to build something &apos;valuable&apos;, until that day
         comes, here&apos;s a list of some basic a** projects I have built
         recently.
@@ -42,7 +42,7 @@ export default function Home() {
 
 const Project = ({ project }: { project: Project }) => {
   return (
-    <section className='flex w-full items-center gap-2 text-sm'>
+    <section className='flex w-full items-center gap-2'>
       <Link
         href={project.url}
         className='outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300 transition-colors hover:text-stone-200 focus:text-stone-200'
@@ -58,7 +58,7 @@ const Project = ({ project }: { project: Project }) => {
         href={`/project/${project.name.toLowerCase()}`}
         className=' outline-custom flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
       >
-        <ArrowRight size={13} />
+        <ArrowRight size={14} />
       </Link>
     </section>
   );

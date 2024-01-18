@@ -58,13 +58,13 @@ export default function Project({ params }: { params: { id: string[] } }) {
       </div>
 
       <div className='grid grid-cols-1 gap-1'>
-        <h2 className='text-stone-300'>About</h2>
-        <p className='text-pretty text-sm'>{project.description}</p>
+        <h2 className='text-stone-300 text-lg'>About</h2>
+        <p className='text-pretty'>{project.description}</p>
       </div>
 
       <div className='grid grid-cols-1 gap-1'>
-        <h2 className='text-stone-300'>Tech Stack</h2>
-        <ul className='list-inside list-disc text-sm'>
+        <h2 className='text-stone-300 text-lg'>Tech Stack</h2>
+        <ul className='list-inside list-disc'>
           {project.tech.map((e, idx) => {
             return (
               <li key={idx}>
