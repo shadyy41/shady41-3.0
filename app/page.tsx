@@ -22,9 +22,7 @@ export default function Home() {
         I am learning Rust and TypeScript.
       </p>
       <p className='text-pretty'>
-        I have yet to build something &apos;valuable&apos;, until that day
-        comes, here&apos;s a list of some basic a** projects I have built
-        recently.
+        These are some projects I have built recently.
       </p>
       <ul className='grid w-full grid-cols-1 gap-2 sm:grid-cols-1'>
         {Array.from(projects).map(([key, project], idx) => (
@@ -45,20 +43,20 @@ const Project = ({ project }: { project: Project }) => {
     <section className='flex w-full items-center gap-2'>
       <Link
         href={project.url}
-        className='outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300 transition-colors hover:text-stone-200 focus:text-stone-200'
+        className={`${font.className} outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200`}
         target='_blank'
         rel='noopener noreferrer'
       >
         {project.name.toLowerCase()}
-        <ArrowUpRightFromSquare size={16} />
+        <ArrowUpRightFromSquare size={12} />
       </Link>
       <p> - </p>
-      <p className='truncate'>{project.short_desc.toLowerCase()}</p>
+      <p className='truncate'>{project.description.toLowerCase()}</p>
       <Link
         href={`/project/${project.name.toLowerCase()}`}
-        className=' outline-custom flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
+        className=' outline-custom w-18 flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
       >
-        <ArrowRight size={14} />
+        <ArrowRight size={16} />
       </Link>
     </section>
   );

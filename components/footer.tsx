@@ -8,8 +8,7 @@ const contact_links = [
 
 const Footer = () => {
   return (
-    <footer className='flex w-full flex-grow items-end justify-between py-2 text-sm'>
-      <p>get in touch </p>
+    <footer className='flex w-full flex-grow items-end justify-start py-2 text-sm'>
       <nav className='flex items-center gap-4'>
         {contact_links.map((e, idx) => (
           <a
