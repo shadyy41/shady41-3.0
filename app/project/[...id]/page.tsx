@@ -30,7 +30,7 @@ export default function Project({ params }: { params: { id: string[] } }) {
         <nav className='flex gap-2 text-sm text-stone-300'>
           {project.gh ? (
             <a
-              href={project.url}
+              href={project.gh}
               className='outline-custom w-fit transition-colors hover:text-stone-200 active:text-stone-200'
               target='_blank'
               rel='noopener noreferrer'
