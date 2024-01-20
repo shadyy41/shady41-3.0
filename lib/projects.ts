@@ -50,22 +50,26 @@ export const projects: Map<string, Project> = new Map([
     {
       name: 'Breeze',
       description:
-        'Breeze is a music player app similar to Spotify Web, users can perform CRUD operations on playlists, perform a regex based search for songs and artists.',
+        'Breeze is a music player app similar to Spotify Web, where users can upload songs and create playlists.',
       banner: breeze,
       url: 'https://breeze41.vercel.app',
-      gh: 'https://github.com/shadyy41/Breeze',
+      gh: 'https://github.com/shadyy41/breeze-2.0',
       tech: [
         {
           name: 'Next.js',
           url: 'https://nextjs.org/',
         },
         {
-          name: 'MongoDB',
-          url: 'https://www.mongodb.com/',
+          name: 'Supabase',
+          url: 'https://supabase.com/'
         },
         {
-          name: 'NextAuth.js',
-          url: 'https://next-auth.js.org/',
+          name: 'Postgres',
+          url: 'https://www.postgresql.org/',
+        },
+        {
+          name: 'Auth.js',
+          url: 'https://authjs.dev/',
         },
       ],
       short_desc:
