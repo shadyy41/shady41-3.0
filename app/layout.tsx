@@ -2,13 +2,12 @@ import './globals.css';
 import { Rubik as Font } from 'next/font/google';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import Image from 'next/image';
 
 const font = Font({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Abhinav Anand',
-  description: '',
+  description: 'Personal website and blog of Abhinav Anand.',
 };
 
 export default function RootLayout({

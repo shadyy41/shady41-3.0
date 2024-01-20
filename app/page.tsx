@@ -55,6 +55,7 @@ const Project = ({ project }: { project: Project }) => {
       <Link
         href={`/project/${project.name.toLowerCase()}`}
         className=' outline-custom w-18 flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
+        aria-label={`View details of ${project.name}`}
       >
         <ArrowRight size={16} />
       </Link>
