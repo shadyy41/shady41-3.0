@@ -7,9 +7,7 @@ export default function Work() {
       <h1 className={`${font.className} text-2xl font-medium text-lime-400`}>
         Work
       </h1>
-      <p className='text-pretty'>
-        Will update once I join 🙃
-      </p>
+      <p className='text-pretty'>Will update once I join 🙃</p>
     </section>
-  )
+  );
 }

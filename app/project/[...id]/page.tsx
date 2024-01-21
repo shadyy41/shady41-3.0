@@ -48,13 +48,33 @@ export default function Project({ params }: { params: { id: string[] } }) {
           </a>
         </nav>
       </header>
-      <div className='relative flex aspect-[16/10] w-full flex-shrink-0 overflow-hidden rounded-md border border-stone-800 bg-stone-950'>
-        <Image
-          src={project.banner}
-          alt='banner image'
-          placeholder='blur'
-          fill={true}
-        />
+
+      <div className='flex w-full flex-col items-center justify-center overflow-hidden rounded border border-white border-opacity-10'>
+        <div className='relative hidden h-7 w-full items-center justify-center border-b border-white border-opacity-10 bg-stone-800 sm:flex'>
+          <div className='absolute left-0 flex items-center justify-center gap-2 p-2'>
+            <span className='h-2 w-2 rounded-full bg-red-600 transition-colors sm:h-3 sm:w-3'></span>
+            <span className='h-2 w-2 rounded-full bg-yellow-600 transition-colors sm:h-3 sm:w-3'></span>
+            <span className='h-2 w-2 rounded-full bg-green-600 transition-colors sm:h-3 sm:w-3'></span>
+          </div>
+          <div className='relative hidden h-full w-full max-w-[260px] p-1 sm:block'>
+            <a
+              href={project.url}
+              className='outline-custom flex h-full w-full items-center justify-center rounded bg-stone-600 text-xs text-stone-300 transition-colors hover:text-stone-200 focus:text-stone-200'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <p>{project.url}</p>
+            </a>
+          </div>
+        </div>
+        <div className='relative flex aspect-[16/10] w-full flex-shrink-0 bg-neutral-950'>
+          <Image
+            src={project.banner}
+            alt='banner image'
+            placeholder='blur'
+            fill={true}
+          />
+        </div>
       </div>
 
       <div className='grid grid-cols-1 gap-1'>

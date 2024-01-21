@@ -61,7 +61,7 @@ export const projects: Map<string, Project> = new Map([
         },
         {
           name: 'Supabase',
-          url: 'https://supabase.com/'
+          url: 'https://supabase.com/',
         },
         {
           name: 'Postgres',

@@ -1,11 +1,11 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://shady41.vercel.app',
       lastModified: new Date(),
-      priority: 1
+      priority: 1,
     },
     {
       url: 'https://shady41.vercel.app/blog',
@@ -31,5 +31,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://shady41.vercel.app/work/project/tictactoe',
       lastModified: new Date(),
     },
-  ]
+  ];
 }
