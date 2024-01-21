@@ -43,7 +43,7 @@ const Project = ({ project }: { project: Project }) => {
     <section className='flex w-full items-center gap-2'>
       <Link
         href={project.url}
-        className='outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200'
+        className='outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -57,13 +57,6 @@ const Project = ({ project }: { project: Project }) => {
       >
         {project.description.toLowerCase()}
       </Link>
-      {/* <Link
-        href={`/project/${project.name.toLowerCase()}`}
-        className=' outline-custom w-18 flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
-        aria-label={`View details of ${project.name}`}
-      >
-        <ArrowRight size={16} />
-      </Link> */}
     </section>
   );
 };
