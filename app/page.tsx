@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <section className='flex w-full flex-col justify-start gap-6'>
       <h2 className='text-lg text-stone-200'>
-        hey, I&apos;m{' '}
+        Hey, I&apos;m{' '}
         <span className={`${font.className} text-xl font-medium text-lime-400`}>
-          abhinav anand
+          Abhinav Anand
         </span>{' '}
         <span role='img' aria-label='Waving Hand'>
           👋
@@ -43,7 +43,7 @@ const Project = ({ project }: { project: Project }) => {
     <section className='flex w-full items-center gap-2'>
       <Link
         href={project.url}
-        className={`${font.className} outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200 text-lg`}
+        className='outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -51,14 +51,14 @@ const Project = ({ project }: { project: Project }) => {
         <ArrowUpRightFromSquare size={12} />
       </Link>
       <p> - </p>
-      <p className='truncate'>{project.description.toLowerCase()}</p>
-      <Link
+      <Link href={`/project/${project.name.toLowerCase()}`} className='truncate transition-colors hover:text-stone-200 focus:text-stone-200 outline-custom'>{project.description.toLowerCase()}</Link>
+      {/* <Link
         href={`/project/${project.name.toLowerCase()}`}
         className=' outline-custom w-18 flex-shrink-0 text-stone-400 underline decoration-stone-600 decoration-dotted underline-offset-2 transition-colors hover:text-stone-200 focus:text-stone-200'
         aria-label={`View details of ${project.name}`}
       >
         <ArrowRight size={16} />
-      </Link>
+      </Link> */}
     </section>
   );
 };
