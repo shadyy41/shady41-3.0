@@ -43,7 +43,7 @@ const Project = ({ project }: { project: Project }) => {
     <section className='flex w-full items-center gap-2'>
       <Link
         href={project.url}
-        className={`${font.className} outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200`}
+        className={`${font.className} outline-custom flex w-fit flex-shrink-0 items-center justify-center gap-1 font-medium text-stone-300/90 transition-colors hover:text-stone-200 focus:text-stone-200 text-lg`}
         target='_blank'
         rel='noopener noreferrer'
       >
