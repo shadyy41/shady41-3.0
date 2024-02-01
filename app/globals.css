@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .outline-custom {
-  @apply rounded ring-lime-400 focus:outline-none focus:ring-2;
+  @apply rounded ring-lime-400 focus-visible:outline-none focus-visible:ring-2;
 }
 
 html {
