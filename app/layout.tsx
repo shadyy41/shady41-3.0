@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='overflow-scroll overflow-x-auto bg-stone-950'>
+      <head>
+        <meta name="google-site-verification" content="B4qraK5_yDKGXcJf_4uLkQbWM0LMf4cHQ9_xR0Ouo2w" />
+      </head>
       <body
         className={`${font.className} flex justify-center text-stone-400 sm:min-h-screen`}
       >
