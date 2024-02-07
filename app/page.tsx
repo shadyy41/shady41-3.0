@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Pixelify_Sans as Font } from 'next/font/google';
-import { ArrowRight, ArrowUpRightFromSquare } from 'lucide-react';
+import { ArrowUpRightFromSquare } from 'lucide-react';
 const font = Font({ subsets: ['latin'] });
 
 import { Project, projects } from '@/lib/projects';
@@ -27,7 +27,7 @@ export default function Home() {
       <ul className='grid w-full grid-cols-1 gap-2 sm:grid-cols-1'>
         {Array.from(projects).map(([key, project], idx) => (
           <li
-            key={idx}
+            key={key}
             className={`${idx !== Array.from(projects).length - 1 ? 'border-b border-stone-800 pb-2' : ''}`}
           >
             <Project project={project} />
